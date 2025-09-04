@@ -194,19 +194,19 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Dr. James Mitchell",
+                name: "********",
                 position: "Chief Executive Officer",
-                experience: "10+ years in mining operations and strategy"
+                experience: "********"
               },
               {
-                name: "Sarah Thompson",
+                name: "********",
                 position: "Head of Consultancy",
-                experience: "8+ years in gold extraction and processing"
+                experience: "********"
               },
               {
-                name: "Michael Rodriguez",
+                name: "********",
                 position: "Technical Director",
-                experience: "7+ years in mining equipment and technology"
+                experience: "********"
               }
             ].map((member, index) => (
               <Card key={index} className="card-gold text-center">
