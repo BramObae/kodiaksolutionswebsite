@@ -54,19 +54,19 @@ const Projects = () => {
 
   const testimonials = [
     {
-      name: "David Chen",
+      name: "David Juma",
       position: "Operations Manager",
       company: "Golden Horizon Mining Ltd",
       content: "Kodiak Solutions transformed our operations completely. Their expertise in gold elution processes helped us achieve recovery rates we never thought possible. The ROI was evident within the first quarter."
     },
     {
-      name: "Maria Rodriguez",
+      name: "Maria Atieno",
       position: "CEO",
-      company: "Andean Gold Corporation",
+      company: "Mining Gold Corporation",
       content: "Working with Kodiak Solutions was a game-changer for our mining operation. Their comprehensive approach to equipment modernization and process optimization exceeded all our expectations."
     },
     {
-      name: "James O'Connor",
+      name: "James Maina",
       position: "Technical Director",
       company: "African Mining Consortium",
       content: "The team at Kodiak Solutions brings unparalleled expertise to every project. Their commitment to safety, efficiency, and environmental responsibility sets them apart in the industry."
