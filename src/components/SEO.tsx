@@ -11,7 +11,7 @@ interface SEOProps {
 const SEO = ({ 
   title, 
   description, 
-  keywords = "gold mining, mining consultancy, elution, mining equipment, mining chemicals", 
+  keywords = "kodiak, solutions, kenyamining, gold mining, mining consultancy, elution, mining equipment, mining chemicals", 
   canonical,
   ogImage = "https://lovable.dev/opengraph-image-p98pqg.png"
 }: SEOProps) => {
@@ -75,15 +75,15 @@ const SEO = ({
       "logo": "/lovable-uploads/bd41d491-0ef4-4bf7-91f9-7e5ff7eab679.png",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+254 712 614 215",
+        "telephone": "+254 710 337 605",
         "contactType": "customer service"
       },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "KIE Eldoret",
-        "addressLocality": "Eldoret",
-        "addressRegion": "Uasin Gishu",
-        "postalCode": "12345"
+        "streetAddress": "Kenya",
+        "addressLocality": "Weatern / North rift",
+        "addressRegion": "Ke",
+        "postalCode": "4540"
       },
       "sameAs": [
         "https://linkedin.com",

@@ -54,19 +54,19 @@ const Projects = () => {
 
   const testimonials = [
     {
-      name: "David Juma",
+      name: "David Chen",
       position: "Operations Manager",
       company: "Golden Horizon Mining Ltd",
       content: "Kodiak Solutions transformed our operations completely. Their expertise in gold elution processes helped us achieve recovery rates we never thought possible. The ROI was evident within the first quarter."
     },
     {
-      name: "Maria Atieno",
+      name: "Maria Rodriguez",
       position: "CEO",
-      company: "Mining Gold Corporation",
+      company: "Andean Gold Corporation",
       content: "Working with Kodiak Solutions was a game-changer for our mining operation. Their comprehensive approach to equipment modernization and process optimization exceeded all our expectations."
     },
     {
-      name: "James Maina",
+      name: "James O'Connor",
       position: "Technical Director",
       company: "African Mining Consortium",
       content: "The team at Kodiak Solutions brings unparalleled expertise to every project. Their commitment to safety, efficiency, and environmental responsibility sets them apart in the industry."
@@ -82,23 +82,67 @@ const Projects = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 to-secondary/90"></div>
-        <div className="absolute inset-0 opacity-20" style={{
-          backgroundImage: `url(${miningEquipment})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}></div>
-        <div className="relative z-10 text-secondary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6 font-serif animate-slide-up">
-            Our <span className="gold-text animate-gold-glow">Project Portfolio</span>
-          </h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{animationDelay: '0.3s'}}>
-            Discover how we've helped mining operations worldwide achieve exceptional results through 
-            innovative solutions, expert consultancy, and cutting-edge technology implementation.
-          </p>
+      <section className="relative py-40 overflow-hidden bg-gradient-to-b from-secondary to-secondary/95">
+        {/* Animated background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 opacity-15" style={{
+            backgroundImage: `url(${miningEquipment})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/85 to-secondary/90"></div>
         </div>
+
+        {/* Decorative blobs */}
+        <div className="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-primary/15 blur-3xl animate-pulse" />
+        <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-orange-500/10 blur-3xl animate-pulse" style={{animationDelay: '0.5s'}} />
+        <div className="absolute top-1/2 left-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-2xl" />
+
+        {/* Content */}
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            {/* Badge */}
+            <div className="flex justify-center mb-8 animate-slide-up">
+              <div className="inline-flex items-center gap-2 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 px-4 py-2">
+                <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
+                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Success Stories</span>
+              </div>
+            </div>
+
+            {/* Main heading */}
+            <div className="text-center max-w-4xl mx-auto mb-12">
+              <h1 className="text-6xl md:text-7xl font-bold mb-6 font-serif text-secondary-foreground leading-tight animate-slide-up" style={{animationDelay: '0.1s'}}>
+                Our <span className="bg-gradient-to-r from-yellow-300 via-orange-300 to-primary bg-clip-text text-transparent drop-shadow-lg animate-gold-glow">Project Portfolio</span>
+              </h1>
+              <p className="text-lg md:text-2xl text-secondary-foreground/90 leading-relaxed max-w-3xl mx-auto animate-slide-up" style={{animationDelay: '0.2s'}}>
+                Discover how we've transformed mining operations across continents with innovative solutions and measurable results.
+              </p>
+            </div>
+
+            {/* Stats preview */}
+            <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto mb-12 animate-slide-up" style={{animationDelay: '0.3s'}}>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">50+</div>
+                <div className="text-sm text-secondary-foreground/80 font-medium">Projects Done</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">250+</div>
+                <div className="text-sm text-secondary-foreground/80 font-medium">Clients Served</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">99%</div>
+                <div className="text-sm text-secondary-foreground/80 font-medium">Success Rate</div>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="flex justify-center animate-slide-up" style={{animationDelay: '0.4s'}}>
+              <Button className="btn-hero group px-8 py-6 text-base">
+                <span>Explore Our Work</span>
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -116,18 +160,16 @@ const Projects = () => {
 
           <div className="space-y-20">
             {projects.map((project, index) => (
-              <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-slide-up gold-hover-effect" style={{animationDelay: `${index * 0.3}s`}}>
+              <div key={index} className="group grid grid-cols-1 lg:grid-cols-2 gap-12 items-center rounded-[32px] border border-white/10 bg-white/10 p-6 md:p-8 shadow-2xl shadow-slate-900/10 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-primary/20 hover:bg-white/20 animate-slide-up" style={{animationDelay: `${index * 0.25}s`}}>
                 {/* Image */}
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <div className="relative hover-scale">
+                  <div className="relative overflow-hidden rounded-[28px] shadow-2xl shadow-slate-900/10 transition duration-500 group-hover:-translate-y-1 group-hover:shadow-primary/20">
                     <img 
                       src={project.image} 
                       alt={project.title}
-                      className="rounded-xl shadow-lg w-full h-96 object-cover"
+                      className="rounded-[28px] w-full h-96 object-cover"
                     />
-                    <div className="absolute inset-0 bg-primary/10 rounded-xl"></div>
-                    <div className="gold-particle" style={{top: '20px', left: '30px'}}></div>
-                    <div className="gold-particle" style={{bottom: '30px', right: '20px'}}></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-[28px]" />
                   </div>
                 </div>
 
@@ -193,15 +235,16 @@ const Projects = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "100+", label: "Projects Completed" },
-              { value: "50+", label: "Satisfied Clients" },
-              { value: "12", label: "Countries Served" },
+              { value: "50+", label: "Projects Completed" },
+              { value: "250+", label: "Satisfied Clients" },
+              { value: "5", label: "Counties Served" },
               { value: "99%", label: "Success Rate" }
             ].map((stat, index) => (
-              <Card key={index} className="card-gold text-center border-none">
-                <CardContent className="p-6">
-                  <div className="text-4xl font-bold text-primary mb-2">{stat.value}</div>
-                  <div className="text-muted-foreground font-medium">{stat.label}</div>
+              <Card key={index} className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/10 shadow-2xl shadow-slate-900/10 backdrop-blur-xl transition duration-500 hover:-translate-y-3 hover:border-primary/30 hover:bg-white/20 text-center">
+                <CardContent className="p-7">
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-secondary opacity-50" />
+                  <div className="relative text-4xl font-bold text-primary mb-2">{stat.value}</div>
+                  <div className="relative text-muted-foreground font-medium">{stat.label}</div>
                 </CardContent>
               </Card>
             ))}
@@ -223,12 +266,13 @@ const Projects = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="card-corporate">
-                <CardContent className="p-8">
-                  <p className="text-muted-foreground italic mb-6 leading-relaxed">
+              <Card key={index} className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/10 shadow-2xl shadow-slate-900/10 backdrop-blur-xl transition duration-500 hover:-translate-y-3 hover:border-primary/30 hover:bg-white/20">
+                <CardContent className="p-8 relative">
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-secondary opacity-50" />
+                  <p className="text-muted-foreground italic mb-6 leading-relaxed relative z-10">
                     "{testimonial.content}"
                   </p>
-                  <div className="border-t border-border pt-6">
+                  <div className="border-t border-border pt-6 relative z-10">
                     <h4 className="font-semibold text-secondary">{testimonial.name}</h4>
                     <p className="text-primary text-sm">{testimonial.position}</p>
                     <p className="text-muted-foreground text-sm">{testimonial.company}</p>
@@ -241,23 +285,27 @@ const Projects = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-serif">
-            Ready to Start Your Success Story?
+      <section className="relative py-28 overflow-hidden bg-gradient-to-r from-secondary via-slate-900 to-secondary text-secondary-foreground">
+        <div className="absolute -top-32 right-0 h-80 w-80 rounded-full bg-primary/30 blur-3xl" />
+        <div className="absolute -bottom-32 left-0 h-80 w-80 rounded-full bg-secondary/30 blur-3xl" />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm uppercase tracking-[0.24em] text-primary mb-5">
+            Project planning made simple
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-serif leading-tight">
+            Ready to turn your mining challenge into a success story?
           </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join our growing portfolio of successful mining projects. Let's discuss how we can 
-            help optimize your operations and achieve exceptional results.
+          <p className="text-lg md:text-xl mb-10 opacity-90 max-w-3xl mx-auto">
+            Reach out now for a free consultation and discover how our team can deliver measurable, sustainable outcomes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="btn-hero" asChild>
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/254712614215" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Discuss Your Project
+                Chat With Us
               </a>
             </Button>
             <Button 
@@ -266,7 +314,7 @@ const Projects = () => {
               asChild
             >
               <a href="mailto:info@kodiaksolutions.com">
-                Email Us
+                Request a Quote
               </a>
             </Button>
           </div>

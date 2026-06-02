@@ -36,7 +36,7 @@ const ServiceElution = () => {
       <section className="relative py-32 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(/lovable-uploads/7f83ab00-b67e-4ce7-879a-5320a4e078d9.png)` }}
+          style={{ backgroundImage: `url(${africanElutionProcess})` }}
         />
         <div className="absolute inset-0 bg-secondary/80" />
         
@@ -50,7 +50,7 @@ const ServiceElution = () => {
           </p>
           <Button className="btn-hero text-lg px-8 py-4" asChild>
             <a 
-              href="https://wa.me/254712614215"
+              href="https://wa.me/1234567890" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -199,43 +199,6 @@ const ServiceElution = () => {
         </div>
       </section>
 
-      {/* Process Demonstration */}
-      <section className="py-20 relative overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: `url(/lovable-uploads/7f83ab00-b67e-4ce7-879a-5320a4e078d9.png)` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/90" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-secondary mb-4 font-serif">
-              Professional Elution Process in Action
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Our experienced technicians utilize advanced equipment and proven methodologies 
-              to deliver exceptional gold recovery results.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div 
-              className="aspect-video rounded-lg overflow-hidden shadow-xl bg-cover bg-center"
-              style={{ backgroundImage: `url(/lovable-uploads/7f83ab00-b67e-4ce7-879a-5320a4e078d9.png)` }}
-            >
-              <div className="w-full h-full bg-gradient-to-t from-secondary/80 to-transparent flex items-end">
-                <div className="p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-2 font-serif">Expert Technicians at Work</h3>
-                  <p className="text-lg opacity-90">
-                    Hands-on expertise and precision equipment operation for optimal gold elution results.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Process Advantages */}
       <section className="py-20 bg-accent">
         <div className="container mx-auto px-4">
@@ -325,7 +288,7 @@ const ServiceElution = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="btn-hero" asChild>
               <a 
-                href="https://wa.me/254712614215" 
+                href="https://wa.me/1234567890" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

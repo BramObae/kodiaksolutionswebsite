@@ -77,7 +77,7 @@ const ServiceEquipment = () => {
           </p>
           <Button className="btn-hero text-lg px-8 py-4" asChild>
             <a 
-              href="https://wa.me/254712614215"
+              href="https://wa.me/1234567890" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -299,7 +299,7 @@ const ServiceEquipment = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="btn-hero" asChild>
               <a 
-                href="https://wa.me/254712614215" 
+                href="https://wa.me/1234567890" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

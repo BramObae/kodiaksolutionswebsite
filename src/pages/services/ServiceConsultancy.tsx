@@ -19,7 +19,6 @@ const ServiceConsultancy = () => {
     "Large-scale commercial mining operations",
     "Small to medium-sized mining companies",
     "Mining exploration and development projects",
-    "Government mining agencies and authorities",
     "Investment firms evaluating mining opportunities",
     "Environmental compliance organizations"
   ];
@@ -36,7 +35,7 @@ const ServiceConsultancy = () => {
       <section className="relative py-32 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(/lovable-uploads/6d7088ef-64a4-47d8-95cb-2795e81bd92f.png)` }}
+          style={{ backgroundImage: `url(${africanTeamConsulting})` }}
         />
         <div className="absolute inset-0 bg-secondary/80" />
         
@@ -50,7 +49,7 @@ const ServiceConsultancy = () => {
           </p>
           <Button className="btn-hero text-lg px-8 py-4" asChild>
             <a 
-              href="https://wa.me/254712614215"
+              href="https://wa.me/1234567890" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -147,70 +146,6 @@ const ServiceConsultancy = () => {
         </div>
       </section>
 
-      {/* Real Mining Operations */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-secondary mb-4 font-serif">
-              Real Mining Projects We Consult On
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Our consultancy services cover all aspects of gold mining operations, 
-              from heap leaching to CIL/CIP processing facilities.
-            </p>
-          </div>
-
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div 
-                  className="aspect-video rounded-lg overflow-hidden shadow-xl bg-cover bg-center hover-scale"
-                  style={{ backgroundImage: `url(/lovable-uploads/6d7088ef-64a4-47d8-95cb-2795e81bd92f.png)` }}
-                >
-                  <div className="w-full h-full bg-gradient-to-t from-secondary/60 to-transparent flex items-end">
-                    <div className="p-6 text-white">
-                      <h3 className="text-xl font-bold mb-2 font-serif">Heap Leaching Operations</h3>
-                      <p className="text-sm opacity-90">
-                        Professional consultancy for large-scale leach pad operations
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-6">
-                <h3 className="text-3xl font-bold text-secondary font-serif">
-                  Operational Excellence Consulting
-                </h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  We provide expert consultancy for heap leaching operations, CIL/CIP processing, 
-                  and all aspects of gold mining. Our team has hands-on experience with large-scale 
-                  mining operations and can help optimize your processes for maximum efficiency.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">Heap leach pad design and optimization</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">CIL/CIP circuit analysis and improvement</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">Process control and monitoring systems</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">Environmental compliance and best practices</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Detailed Description */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -236,15 +171,6 @@ const ServiceConsultancy = () => {
                   Transform your mining operations with our optimization services. We analyze your current 
                   processes, identify bottlenecks and inefficiencies, and implement strategic improvements 
                   that enhance productivity, reduce costs, and maximize gold recovery rates.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-semibold text-secondary mb-4">Risk Management & Compliance</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Navigate complex regulatory requirements and mitigate operational risks with our expert 
-                  guidance. We help ensure your operations meet all safety standards, environmental 
-                  regulations, and industry best practices while minimizing potential liabilities.
                 </p>
               </div>
 
@@ -299,7 +225,7 @@ const ServiceConsultancy = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="btn-hero" asChild>
               <a 
-                href="https://wa.me/254712614215" 
+                href="https://wa.me/1234567890" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Facebook, Linkedin, Twitter, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Linkedin, Twitter, MessageSquare, Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,16 +12,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="/lovable-uploads/bd41d491-0ef4-4bf7-91f9-7e5ff7eab679.png" 
+              src={logo} 
               alt="Kodiak Solutions Limited" 
-              className="h-12 w-auto brightness-0 invert"
+              className="h-12 w-auto"
             />
             <p className="text-sm text-gray-300">
-              Your trusted partner in gold mining excellence, delivering world-class consultancy, elution, chemicals, and equipment solutions.
+              Your trusted partner in gold mining excellence.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.linkedin.com/company/example-company"
+                href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-lg hover:bg-primary transition-colors duration-200"
@@ -28,7 +29,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="https://www.facebook.com/example.company"
+                href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-lg hover:bg-primary transition-colors duration-200"
@@ -36,7 +37,7 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com/example_company"
+                href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-lg hover:bg-primary transition-colors duration-200"
@@ -44,12 +45,12 @@ const Footer = () => {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/0710337605"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-lg hover:bg-green-500 transition-colors duration-200"
               >
-                <MessageCircle className="h-5 w-5" />
+                <MessageSquare className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -82,18 +83,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-primary">Our Services</h3>
             <ul className="space-y-2">
               {[
-                { name: "Gold Mining Consultancy", href: "/services/consultancy" },
-                { name: "Gold Elution", href: "/services/elution" },
-                { name: "Mining Chemicals", href: "/services/chemicals" },
-                { name: "Mining Equipment", href: "/services/equipment" },
+                "Gold Mining Consultancy",
+                "Gold Elution",
+                "Mining Chemicals",
+                "Mining Equipment",
               ].map((service) => (
-                <li key={service.name}>
-                  <Link
-                    to={service.href}
-                    className="text-sm text-gray-300 hover:text-primary transition-colors duration-200"
-                  >
-                    {service.name}
-                  </Link>
+                <li key={service}>
+                  <span className="text-sm text-gray-300">{service}</span>
                 </li>
               ))}
             </ul>
@@ -114,8 +110,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-primary mt-1" />
                 <span className="text-sm text-gray-300">
-                  KIE Eldoret<br />
-                  Eldoret, Kenya
+                  Kenya<br />
+                  Western / North rift 
                 </span>
               </div>
             </div>
@@ -129,12 +125,12 @@ const Footer = () => {
               © {currentYear} Kodiak Solutions Limited - All Rights Reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy" className="text-sm text-gray-400 hover:text-primary transition-colors duration-200">
+              <a href="#" className="text-sm text-gray-400 hover:text-primary transition-colors duration-200">
                 Privacy Policy
-              </Link>
-              <Link to="/terms" className="text-sm text-gray-400 hover:text-primary transition-colors duration-200">
+              </a>
+              <a href="#" className="text-sm text-gray-400 hover:text-primary transition-colors duration-200">
                 Terms of Service
-              </Link>
+              </a>
             </div>
           </div>
         </div>

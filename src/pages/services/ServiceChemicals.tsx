@@ -77,7 +77,7 @@ const ServiceChemicals = () => {
           </p>
           <Button className="btn-hero text-lg px-8 py-4" asChild>
             <a 
-              href="https://wa.me/254712614215"
+              href="https://wa.me/1234567890" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -185,62 +185,6 @@ const ServiceChemicals = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Premium Products Showcase */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-secondary mb-4 font-serif">
-              Premium Quality Products
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We partner with leading manufacturers to supply the highest quality activated carbon 
-              and specialized chemicals for optimal mining performance.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div 
-                  className="aspect-square rounded-lg overflow-hidden shadow-xl bg-cover bg-center"
-                  style={{ backgroundImage: `url(/lovable-uploads/18c0a8dc-b354-4be0-8803-dc979cd8b7a6.png)` }}
-                >
-                </div>
-              </div>
-              
-              <div className="space-y-6">
-                <h3 className="text-3xl font-bold text-secondary font-serif">
-                  Premium Activated Carbon
-                </h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  We supply high-grade activated carbon from trusted manufacturers like Jacobi Carbons, 
-                  specifically designed for gold adsorption and recovery processes. Our activated carbon 
-                  products ensure maximum gold loading capacity and optimal recovery rates.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">High surface area for maximum gold adsorption</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">Consistent particle size distribution</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">Superior hardness and durability</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">Optimized for CIL/CIP processes</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -355,7 +299,7 @@ const ServiceChemicals = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="btn-hero" asChild>
               <a 
-                href="https://wa.me/254712614215" 
+                href="https://wa.me/1234567890" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
