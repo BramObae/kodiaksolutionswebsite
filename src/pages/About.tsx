@@ -84,7 +84,7 @@ const About = () => {
                   Starting as a small consultancy firm, we have grown into a comprehensive solutions provider, serving clients across 4 Counties and completing 50+ successful projects. Our commitment to excellence and innovation has made us a preferred partner for mining operations of all scales.
                 </p>
                 <p>
-                  Today, we continue to lead the industry with cutting-edge elution technologies, high-quality mining chemicals, state-of-the-art equipment, and unparalleled consulting services that drive our clients' success.
+                  Today, we continue to lead the industry with cutting edge elution technologies, high-quality mining chemicals, state-of-the-art equipment, and unparalleled consulting services that drive our clients' success.
                 </p>
               </div>
             </div>
@@ -212,19 +212,19 @@ const About = () => {
                 name: "*********",
                 position: "Founder",
                 Contact: "emmaawinja@kodiaksolutions.co.ke / 0729696220",
-                experience: "10+ years as a project manager and civil engineer"
+                experience: "13+ years as a project manager and civil engineer"
               },
               {
                 name: "******",
                 position: "Co Founder",
                 Contact: "0712614215",
-                experience: "8+ years in gold extraction and processing"
+                experience: "10+ years in gold extraction and processing"
               },
               {
                 name: "*******",
                 position: "Technical Operations",
                 Contact: "******",
-                experience: "5+ years in mining equipment and technology"
+                experience: "7+ years in mining equipment and technology"
               }
             ].map((member, index) => (
               <div
